@@ -1,0 +1,5 @@
+# Crie um programa que leia o nome de uma pessoa e
+# diga se ela tem "Silva" no nome.
+
+nome = str(input('Digite o seu nome: ')).strip()
+print('Tem "Silva" em seu nome? {}.'.format('SILVA'in nome.upper()))#O "in" é um operador na linguagem Python.
