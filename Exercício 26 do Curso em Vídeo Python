@@ -3,7 +3,7 @@
 # Em que posição ela aparece a primeira vez.
 # Em que posição ela aparece a última vez.
 
-frase = str(input('Digite uma frase: '))
+frase = str(input('Digite uma frase: ')).strip().upper()#Upper deixa a frase em maiúsculo. #Strip retira os espaços no começo e no final da string.
 print('Quantas veses aparece a letra "A"? {}'.format(frase.count('A')))
-print('Em que posição ela aparece a primeira vez? {}'.format(frase.find('A')))
-print('En qual posição ela aparece a última vez? {}'.format(frase.rfind('A')))
+print('Em que posição ela aparece a primeira vez? {}'.format(frase.find('A')+1))#No Python a string começa no indice 0,colocamos +1 pra retornar na 1 posição.
+print('En qual posição ela aparece a última vez? {}'.format(frase.rfind('A')+1))
