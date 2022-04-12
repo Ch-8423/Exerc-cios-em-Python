@@ -5,7 +5,7 @@
 #segundo=Souza
 
 
-nome = input('Digite o seu nome completo: ')
+nome = input('Digite o seu nome completo: ').strip()
 dividido = nome.split()
 print('Primeiro nome: {}'.format(dividido[0]))
-print('O último nome é: {}'.format(dividido[-1]))
+print('O último nome é: {}'.format(dividido[-1]))#O professor usou o código format(len(nome)-1).Eu apenas usei a variável[-1] e deu certo e assim ficará.
